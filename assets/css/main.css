@@ -1,0 +1,91 @@
+*{box-sizing: border-box;}
+
+body{background: #F5F4F5;}
+
+.container{
+	background: white;
+}
+
+h1, h2, h3, h4, h5, h6{font-family: "brandon-grotesque",sans-serif; text-transform: uppercase;}
+p{font-family: "ingra",sans-serif;}
+
+.jumbotron{
+	overflow: hidden;
+	background: rgba(0,255,187,1);
+	background: -moz-linear-gradient(left, rgba(0,255,187,1) 0%, rgba(3,181,136,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,255,187,1)), color-stop(100%, rgba(3,181,136,1)));
+	background: -webkit-linear-gradient(left, rgba(0,255,187,1) 0%, rgba(3,181,136,1) 100%);
+	background: -o-linear-gradient(left, rgba(0,255,187,1) 0%, rgba(3,181,136,1) 100%);
+	background: -ms-linear-gradient(left, rgba(0,255,187,1) 0%, rgba(3,181,136,1) 100%);
+	background: linear-gradient(to right, rgba(0,255,187,1) 0%, rgba(3,181,136,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffbb', endColorstr='#03b588', GradientType=1 );
+	display: table;
+	width: 100%;
+}
+.jumbotron .cell {display: table-cell; vertical-align: middle; height: 100%; width: 100%;}
+.jumbotron h1{padding: 2em 0em 0em 1.5em; margin: 0; color; font-size: 4em;margin-bottom: 0.6em;}
+.jumbotron h2{padding: 0em 0em 3em 2.5em; font-size: 2.5em; margin: 0;}
+nav ul {list-style-type: none; padding: 0px;}
+nav ul li a:before{content: "\f054"; font: normal normal normal 14px/1 FontAwesome; margin-right: 10px;}
+nav ul li a:hover:before{margin-right:5px; margin-left: 5px;}
+
+footer{width: 100%;}
+
+.currentweek header{ width: 300px; background:#00B788; padding: 0.5em 0em;}
+.currentweek article p{ font-size: 5em; margin-top: 80px;}
+.currentweek article {background:#00FFBA; width: 300px; height: 200px; overflow: auto;}
+
+.calendar, .calendar table {
+	border: 0;
+	margin: 0;
+}
+.calendar, .calendar table, .calendar td {
+	text-align: center;
+}
+.calendar .year{
+	font-family:Verdana; 
+	font-size:18pt; 
+	color:#ff9900;
+}
+.calendar .month{
+	vertical-align: top;
+	padding: 0em 3em;
+}
+.calendar .month table{
+	margin-top: 1em;
+	font-size:8pt;
+	font-family:Verdana;
+	width: 100%;
+	margin-bottom: 2em;
+}
+.calendar .month th{
+	text-align: center;
+	font-size:12pt;
+	font-family:Arial;
+	color:#666699;
+}
+.calendar .month td{
+	font-size:8pt;
+	font-family:Verdana;
+}
+.calendar .month .days td{
+	color:#666666;
+	font-weight: bold;
+}
+.calendar .month .sat{
+	color:#0000cc;
+}
+.calendar .month .sun{
+	color:#cc0000;
+}
+.calendar .month .today{
+	background:#ff0000;
+	color: #ffffff;
+}
+
+@media only screen and (max-width: 48em){
+	.jumbotron h1{padding: 1em 0em 0em 0.25em; margin: 0; color; font-size: 2em;line-height: 2em;}
+	.jumbotron h2{padding: 0em 0em 3em 0.5em; font-size: 1.25em; margin: 0; line-height: 1.5}
+}
+
+.widget{border: 2px solid #F5F4F5;margin: 1em;padding: 1em;border-radius: 5px;}
